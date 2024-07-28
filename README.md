@@ -40,7 +40,7 @@
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/yourusername/webuild.git
+   git clone https://github.com/kumar-rakshith/WeBuild.git
    cd webuild
    ```
 
