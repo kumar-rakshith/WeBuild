@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact - Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
+</head>
+<style>
+    .contact {
+        background-image: url('image/jcp.jpg');
+        /* background-color: rgba(7, 7, 7, 0.5); */
+        background-size: cover;
+        height: 700px;
+        margin-top: -100px;
+    }
+</style>
+<body>
+    <!--NAV-->
+    <header class="header">
+        <!-- <img src="image/webuild-icon.png" alt=""> -->
+        <a href="#" class="logo">We<span>Build</span></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="Aboutus_page.html">about</a>
+            <a href="Service-page.html">services</a>
+            <a href="Project-page.html">projects</a>
+            <a href="#contact" style="color: #f5bf23;">contact</a>
+            
+        </nav>
+    </header>
+    <!--Nav-->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="heading text-center">
+                <h2>Contact<span> Us </span></h2>
+                <p>feel free to ask us
+                    we are there to assist you</p>
+            </div>
+            <div class="row bg-grp">
+                <div class="info-container">
+                    <div class="title">
+                        <h3>Contact detail</h3>
+                       
+                    </div>
+                    <div class="content-details">
+
+                        <div class="info">
+                            <img src="image/contact.png" alt="">
+                            <h4 class="details-inline-block">PHONE :
+                                <br>
+                                <span> 917349431204 , 7349431204</span>
+                            </h4>
+                        </div>
+                        <div class="info">
+                            <img src="image/email.png" alt="">
+                            <h4 class="details-inline-block">EMAIL :
+                                <br>
+                                <span>webuild@gmail.com</span>
+                            </h4>
+                        </div>
+                        <div class="info">
+                            <img src="image/address.png" alt="">
+                            <h4 class="details-inline-block">ADDRESS :<br>
+                                <span>St Johesp, Mangalore</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="title">
+                        <h3>We will contact you right away</h3>
+                    </div>
+                    <form method="post" action="Contect_submit.php">
+                        <div class="col">
+                            <div class="grp-small-input">
+                                <div class="small-input">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required pattern="[A-Za-z\s]+">
+                                </div>
+                                
+                                <div class="small-input">
+                                    <input type="email" name="email"class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                            <div class="grp-small-input">
+                                <div class="col">
+                                    <div class="small-input">
+                                        <input type="tel" name="number" class="form-control" id="notop" placeholder="Number" pattern="^\d{10}$" required>
+                                    </div>
+                                    
+                                    
+                                    <div class="small-input">
+                                        <input type="text"name="location" class="form-control" id="notop" placeholder="Location" required pattern="[A-Za-z\s]+">
+                                    </div>
+                                </div>
+                                <div class="big-input form-control">
+                                    <label><input type="checkbox" name="services[]" value="construction_build"
+                                            style="border-color: orange; background-color: orange;">
+                                        Construction Build</label><br>
+                                    <label><input type="checkbox" name="services[]" value="construction_consultancy">
+                                        Construction Consultancy</label><br>
+                                    <label><input type="checkbox" name="services[]" value="renovate_building"> Renovate
+                                        Building</label><br>
+                                    <label><input type="checkbox" name="services[]" value="interior_design"> Interior
+                                        Design</label><br>
+                                    <label><input type="checkbox" name="services[]" value="building_maintenance"> Building
+                                        Maintenance</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" name="message" id="comment" placeholder="Message" required pattern="[A-Za-z\s]+"></textarea>
+                        </div>
+                        <button class="btn-con" id="btnid" type="submit">Send Now!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="footer-section ">
+            <div class="footer-info">
+                <div class="info-address">
+                    <!-- <img src="info-location.jpg" alt="address"> -->
+                    <img src="image/address.png" alt="">
+                    <p>Address</p>
+                    <h2>Vamajooor mangalore</h2>
+                </div>
+                <div class="info-pno">
+                    <img src="image/contact.png" alt="">
+                    <p>Phone Number</p>
+                    <h2>756845346 , 7349431204</h2>
+                </div>
+                <div class="info-email">
+                    <img src="image/email.png" alt="">
+                    <p>Email</p>
+                    <h2>webuild@gmail.com</h2>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="getin-touch">
+                    <h1>Get In Touch</h1>
+                    <a class="btn3" href="#"><img src="image/instagram.png" alt=""></a>
+                    <a class="btn3" href="#"><img src="image/facebook.png" alt=""></a>
+                    <a class="btn3" href="#"><img src="image/linkedin.png" alt=""></a>
+                    <a class="btn3" href="#"><img src="image/twitter.png" alt=""></a>
+                </div>
+                <div class="quick-links">
+                    <h1>Quick links</h1>
+                    <a class="btn2" href="index.html">home</a>
+                    <a class="btn2" href="Aboutus_page.html">about</a>
+                    <a class="btn2" href="Service-page.html">services</a>
+                    <a class="btn2" href="Project-page.html">projects</a>
+                    <a class="btn2" href="contact.html">contact</a>
+                    <a class="btn2" href="#blogs">blogs</a>
+                </div>
+                <div class="credit"> created by <span>rakshith</span> | all rights reserved! </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER END -->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var form = document.querySelector("form");
+    
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+                var formData = new FormData(form);
+                fetch("Contect_submit.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => {
+                    if (response.ok) {
+                        form.reset();
+                        alert("Thank you for your submission! We will get in touch with you shortly.");
+                    } else {
+                        throw new Error("Error submitting form");
+                    }
+                })
+                .catch(error => {
+                    console.error("Form submission error:", error);
+                    alert("There was an error submitting the form. Please try again later.");
+                });
+            });
+        });
+    </script>
+    
+    
+</body>
+
+</html>

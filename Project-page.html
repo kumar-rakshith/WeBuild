@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/project-page.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--NAV-->
+    <header class="header">
+        <!-- <img src="image/webuild-icon.png" alt=""> -->
+        <a href="#" class="logo">We<span>Build</span></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a  href="Aboutus_page.html" >about</a>
+            <a href="Service-page.html">services</a>
+            <a href="Project-page.html" style="color: #f5bf23;">projects</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <!--Nav-->
+
+    <!-- Project-Hero-section -->
+    <section class="project-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Projects</h1>
+            <h3 class="hero-subtitle">"<span>Discover the projects</span> that we are proud of."<span></span></h3>
+        </div>
+    </section>
+    <!-- Project-Hero-section -->
+
+    
+
+    <section class="project-display">
+        <h2 class="project-display-title">Let our work speak for itself!</h2>
+        <div class="project-buttons-row">
+            <button class="project-button filter-button all project-btn-active" id="op"
+                onclick="filterProjects('all')">ALL</button>
+            <button class="project-button filter-button" onclick="filterProjects('button1')">ARCITECTURE DESIGN</button>
+            <button class="project-button filter-button" onclick="filterProjects('button2')">INTERIAL DESIGN</button>
+            <button class="project-button filter-button" onclick="filterProjects('button3')">Constructin
+                Consultings</button>
+            <button class="project-button filter-button" onclick="filterProjects('button4')">Multi-sector
+                Constructin</button>
+            <button class="project-button filter-button" onclick="filterProjects('button5')">renovation and
+                remodeling</button>
+            <button class="project-button filter-button" onclick="filterProjects('button6')">building
+                maintaince</button>
+        </div>
+
+        <div class="project-display-row" id="project-display-row">
+            <!-- Project boxes go here -->
+            <div class="project-box all button1">
+                <img src="image/project/architecture-01.png" alt="Project 1">
+                <div class="project-details">
+                    <h2>Modern Minimalist Residence</h2>
+                    <p>Exemplifying simplicity and sophistication, this architectural design model emphasizes clean
+                        lines, open spaces, and minimalist aesthetics, ideal for contemporary urban living.</p>
+                </div>
+            </div>
+            <div class="project-box all button1">
+                <img src="image/project/architecture-02.png" alt="Project 1">
+                <div class="project-details">
+                    <h2>Coastal Retreat Villa</h2>
+                    <p>Embracing coastal living, this architectural design model harmonizes
+                        modern luxury with coastal charm, offering a tranquil escape by the sea.</p>
+                </div>
+            </div>
+            <div class="project-box all button1">
+                <img src="image/project/architecture-03.jpeg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Metropolitan Tower</h2>
+                    <p> An iconic architectural design model redefining urban skylines with its avant-garde structure
+                        and cutting-edge sustainability features.</p>
+                </div>
+            </div>
+            <div class="project-box all button1">
+                <img src="image/project/architecture-04.png" alt="Project 1">
+                <div class="project-details">
+                    <h2>Urban Oasis Residence</h2>
+                    <p>Urban Oasis Residence: A contemporary architectural design model blending sleek lines with
+                        natural elements, creating a serene urban sanctuary.</p>
+                </div>
+            </div>
+            <div class="project-box all button1">
+                <img src="image\project\architecture-05.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Alpine Chalet</h2>
+                    <p>Inspired by the majestic mountains, this architectural design model showcases
+                        rustic elegance and cozy comfort, perfect for mountain getaways.</p>
+                </div>
+            </div>
+            <div class="project-box all button1">
+                <img src="image/project/architecture-06.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h2>Contemporary Office Complex</h2>
+                    <p>This architectural design model offers a modern workspace solution,
+                        integrating innovative design concepts with functional efficiency to elevate the commercial
+                        experience.</p>
+                </div>
+            </div>
+            <div class="project-box all button2">
+                <img src="image/project/interior-design-01.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Balcony Retreat</h2>
+                    <p>Create an outdoor sanctuary with this interior design model for balconies,
+                        featuring cozy seating, vibrant plants, and ambient lighting, perfect for relaxing and enjoying
+                        the views.</p>
+                </div>
+            </div>
+            <div class="project-box all button2">
+                <img src="image/project/interior-design-02.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Spa-Inspired Bathroom</h2>
+                    <p>Transform your bathroom into a serene oasis with this interior design
+                        model, featuring soothing colors, luxurious fixtures, and spa-inspired elements for a tranquil
+                        bathing experience.</p>
+                </div>
+            </div>
+            <div class="project-box all button2">
+                <img src="image/project/interior-design-03.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Rustic Charm Kitchen</h2>
+                    <p>Combining warm wooden accents with modern amenities, this interior design
+                        model brings rustic charm to the heart of your home, creating a cozy and inviting kitchen space.
+                    </p>
+                </div>
+            </div>
+            <div class="project-box all button2">
+                <img src="image/project/interior-design-04.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Sleek Modern Kitchen</h2>
+                    <p>Characterized by clean lines and minimalist design, this interior model
+                        offers a sleek and contemporary kitchen experience, blending functionality with style for modern
+                        living.</p>
+                </div>
+            </div>
+            <div class="project-box all button2">
+                <img src="image/project/interior-design-05.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Urban Loft Hall</h2>
+                    <p> Embrace industrial chic with this interior design model, showcasing exposed
+                        brick walls, polished concrete floors, and contemporary furnishings for a stylish urban loft
+                        hallway.</p>
+                </div>
+            </div>
+            <div class="project-box all button2">
+                <img src="image/project/interior-design-06.jpg" alt="Project 2">
+                <div class="project-details">
+                    <h2>Tranquil Retreat Bedroom</h2>
+                    <p>Escape to serenity with this interior design model for bedrooms,
+                        offering soft hues, plush bedding, and calming decor elements to create a peaceful and restful
+                        retreat within your home.</p>
+                </div>
+            </div>
+            <div class="project-box all button3">
+                <img src="image/project/construction-consulting-2.jpg" alt="Project 3">
+                <div class="project-details">
+                    <h2>Client Presentation</h2>
+                    <p>Elevate your client presentations with seamless online meetings, fostering collaboration and
+                        clarity in project communication</p>
+                </div>
+            </div>
+            <div class="project-box all button3">
+                <img src="image/project/Site Inspections-01.jpg" alt="Project 3">
+                <div class="project-details">
+                    <h2>Site Inspection</h2>
+                    <p>Thorough site inspections in Surathkal offer peace of mind and valuable insights for informed
+                        decisions on client property</p>
+                </div>
+            </div>
+
+
+            <div class="project-box all button4">
+                <img src="image/project/Multi-sector-01.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Residential Building in Vamanjoor</h2>
+                    <p>Under construction residential building in Vamanjoor, offering modern amenities and spacious
+                        living spaces for comfortable living in a thriving community. </p>
+                </div>
+            </div>
+            <div class="project-box all button4">
+                <img src="image/project/Multi-sector-04.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Residential Building</h2>
+                    <p>Residential building in Pumpwell, offering contemporary living spaces and convenient access to
+                        nearby amenities for a comfortable lifestyle</p>
+                </div>
+            </div>
+            <div class="project-box all button4">
+                <img src="image/project/Multi-sector-commercial-01.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Jayalakshmi Silks PVT LTD</h2>
+                    <p>Jayalakshmi Silks in Udupi offers a diverse range of exquisite silk sarees and ethnic wear and
+                        traditional craftsmanship</p>
+                </div>
+            </div>
+            <div class="project-box all button4">
+                <img src="image/project/Multi-sector-commercial-02.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2> Ajanta Business Center</h2>
+                    <p>Ajanta Business Center, a new level of commercial office premises. Our aim is to help businesses
+                        have a good platform to work and prosper.</p>
+                </div>
+            </div>
+            <div class="project-box all button4">
+                <img src="image/project/Multi-sector-Industrial-01.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2> TechForge Industries</h2>
+                    <p>
+                        TechForge Industries is a leading provider of innovative industrial solutions, specializing in
+                        precision manufacturing and advanced engineering services, currently under construction.</p>
+                </div>
+            </div>
+            <div class="project-box all button4">
+                <img src="image/project/Multi-sector-Industrial-02.jpeg" alt="Project 4">
+                <div class="project-details">
+                    <h2>Malabar Oxygen Co.Pvt.Ltd.</h2>
+                    <p>Malabar Oxygen in Baikampady specializes in providing industrial gases and related services,
+                        catering to various industries in the region.</p>
+                </div>
+            </div>
+
+
+            <div class="project-box all button5">
+                <img src="image//project/renovation-01.jpeg" alt="Project 5">
+                <div class="project-details">
+                    <h2>Mangalore Railway Station</h2>
+                    <p>Transforming travel experiences through the revitalization of Mangalore Railway Station, ensuring
+                        modern amenities and enhanced passenger comfort.</p>
+                </div>
+            </div>
+            <div class="project-box all button5">
+                <img src="image//project/renovation-02.jpeg" alt="Project 5">
+                <div class="project-details">
+                    <h2>Governament Hospital</h2>
+                    <p>Governament Hospital In Mangalore Under Renovation</p>
+                </div>
+            </div>
+            <div class="project-box all button5">
+                <img src="image//project/renovation-03.jpeg" alt="Project 5">
+                <div class="project-details">
+                    <h2>Houes renovations</h2>
+                    <p>Reviving homes in Mangaladevi with tailored renovations, blending modern comforts with timeless
+                        charm."</p>
+                </div>
+            </div>
+            <div class="project-box all button5">
+                <img src="image/project/renovation-04.png" alt="Project 5">
+                <div class="project-details">
+                    <h2>School Book Company</h2>
+                    <p>Revamping educational spaces with the School Book Company Mangalore renovation, fostering dynamic
+                        learning environments for the future</p>
+                </div>
+            </div>
+            <div class="project-box all button5">
+                <img src="image/project/renovation-05.png" alt="Project 5">
+                <div class="project-details">
+                    <h2>Mangalore Bus Stand</h2>
+                    <p>Transforming Mangalore Bus Stand into a modern transportation hub, ensuring convenience and
+                        comfort for commuters.</p>
+                </div>
+            </div>
+            <div class="project-box all button5">
+                <img src="image/project/renovation-06.jpg" alt="Project 5">
+                <div class="project-details">
+                    <h2>Pai International Magalore</h2>
+                    <p>Pai International Store Renovation: Elevating shopping experiences with modernized spaces and
+                        enhanced functionality</p>
+                </div>
+            </div>
+
+
+
+            <div class="project-box all button6">
+                <img src="image/project/maintaince-04.png" alt="Project 6">
+                <div class="project-details">
+                    <h2>Painting</h2>
+                    <p> Enhancing aesthetics and durability with professional painting maintenance.</p>
+                </div>
+            </div>
+            <div class="project-box all button6">
+                <img src="image/project/maintaince-03.png" alt="Project 6">
+                <div class="project-details">
+                    <h2>Electrical Maintenance</h2>
+                    <p>Ensuring uninterrupted power supply and safety through expert inspections and repairs.</p>
+                </div>
+            </div>
+            <div class="project-box all button6">
+                <img src="image/project/maintaince-01.jpg" alt="Project 6">
+                <div class="project-details">
+                    <h2>Plumbing Services:</h2>
+                    <p> Reliable solutions for water system upkeep, from repairs to installations.</p>
+                </div>
+            </div>
+            <div class="project-box all button6">
+                <img src="image/project/maintaince-02.jpg" alt="Project 6">
+                <div class="project-details">
+                    <h2>AC Service</h2>
+                    <p>Keeping indoor environments comfortable with efficient AC maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="footer-section ">
+            <div class="footer-info">
+                <div class="info-address">
+                    <!-- <img src="info-location.jpg" alt="address"> -->
+                    <img src="image/address.png" alt="">
+                    <p>Address</p>
+                    <h2>Vamajooor mangalore</h2>
+                </div>
+                <div class="info-pno">
+                    <img src="image/contact.png" alt="">
+                    <p>Phone Number</p>
+                    <h2>756845346 , 7349431204</h2>
+                </div>
+                <div class="info-email">
+                    <img src="image/email.png" alt="">
+                    <p>Email</p>
+                    <h2>webuild@gmail.com</h2>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="getin-touch">
+                    <h1>Get In Touch</h1>
+                    <a class="btn-getin-touch" href="#"><img src="image/instagram.png" alt=""></a>
+                    <a class="btn-getin-touch" href="#"><img src="image/facebook.png" alt=""></a>
+                    <a class="btn-getin-touch" href="#"><img src="image/linkedin.png" alt=""></a>
+                    <a class="btn-getin-touch" href="#"><img src="image/twitter.png" alt=""></a>
+                </div>
+                <div class="quick-links">
+                    <h1>Quick links</h1>
+                    <a class="btn2" href="index.html">home</a>
+                    <a class="btn2" href="Aboutus_page.html">about</a>
+                    <a class="btn2" href="Service-page.html">services</a>
+                    <a class="btn2" href="Project-page.html">projects</a>
+                    <a class="btn2" href="contact.html">contact</a>
+                    <a class="btn2" href="#blogs">blogs</a>
+                </div>
+                <div class="credit"> created by <span>rakshith</span> | all rights reserved! </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER END -->
+
+    <script>
+        function filterProjects(category) {
+            var projectBoxes = document.querySelectorAll('.project-box');
+            var shuffledProjectBoxes = Array.from(projectBoxes).sort(() => Math.random() - 0.5);
+
+            shuffledProjectBoxes.forEach(function (box, index) {
+                if (category === 'all' || box.classList.contains(category)) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+                box.style.order = index;
+            });
+
+            // Remove 'active' class from all buttons
+            document.querySelectorAll('.filter-button').forEach(function (btn) {
+                btn.classList.remove('project-btn-active');
+            });
+
+            // Add 'active' class to the clicked button
+            var clickedButton = document.querySelector('[onclick="filterProjects(\'' + category + '\')"]');
+            clickedButton.classList.add('project-btn-active');
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

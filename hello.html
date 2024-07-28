@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    :root {
+        --yellow: #f5bf23;
+        --black: #111;
+        --white: #fff;
+        --light-color: #666;
+        --light-bg: #eee;
+        --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        --border: .1rem solid rgba(0, 0, 0, .3);
+    }
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        /* height: 100%; */
+    }
+
+    .container01 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .row01 {
+        /* flex: 1; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .part01 {
+        /* border: 1px solid black; */
+        /* overflow: auto; to enable scrolling if content exceeds height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .a,
+    .b {
+        height: 20vh;
+        /* Each part takes 20% of the viewport height */
+    }
+
+
+    .c {
+        height: 50vh;
+    }
+
+    .b {
+        height: 10vh;
+        /* Part B takes 40% of the viewport height */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        /* width: 100vh; */
+        /* border: 2px solid blue; */
+        margin-left: 30vh;
+        /* gap: 10vh; */
+    }
+
+    .button01 {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .a {
+        margin-top: 5vh;
+        margin-left: 18vh;
+        height: 17vh;
+        /* background-color: blue; */
+        margin-bottom: 0;
+    }
+
+    .a h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--black);
+        text-transform: capitalize;
+    }
+
+
+    .b {
+        width: 150vh;
+
+    }
+
+    .button01 {
+        width: 22vh;
+        padding: 1px;
+        height: 6vh;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 1rem;
+        /* padding: 1rem 3rem; */
+        background: var(--yellow);
+        color: var(--black);
+        cursor: pointer;
+        font-size: 2vh;
+        font-weight: 500;
+        /* text-transform: capitalize; */
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+        color: black;
+    }
+
+    .b .button01 {
+        width: 19vh;
+        padding: 1px;
+        height: 6vh;
+        text-transform: uppercase;
+        display: inline-block;
+        font-weight: 300;
+        margin-top: 1rem;
+        /* padding: 1rem 3rem; */
+        background: var(--yellow);
+        color: var(--black);
+        cursor: pointer;
+        font-size: 1.5vh;
+        /* text-transform: capitalize; */
+        -webkit-transition: .2s linear;
+        transition: .2s linear;
+        color: black;
+    }
+
+
+
+    .button01:hover {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    .c {
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+
+    .left-section01 {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .right-section01 {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        width: 40vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-section01 img {
+        width: 70vh;
+        height: 30vh;
+        height: auto;
+        max-width: 100%;
+        /* Ensure the image doesn't exceed its container */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Add a subtle shadow */
+        margin-left: 20vh;
+    }
+
+    .right-section01 h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .right-section01 p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+        width: 70vh;
+    }
+
+
+    .right-section01 .button01{
+        font-size: 2.2vh;
+        border-radius: 10px;
+    }
+
+</style>
+
+<body>
+    <div class="container01">
+        <div class="a">
+            <h1 class="heading">Our Projects</h1>
+            <h2>Quality builds, crafted with care.</h2>
+        </div>
+        <div class="b">
+            <button class="button01" onclick="showProject('architecture')">Architecture</button>
+            <button class="button01" onclick="showProject('interior')">INTERIAL DESIGN</button>
+            <button class="button01" onclick="showProject('construction')">Constructin Consultings</button>
+            <button class="button01" onclick="showProject('multi-sector')">Multi-sector Consultings</button>
+            <button class="button01" onclick="showProject('renovation')">renovation and remodeling</button>
+            <button class="button01" onclick="showProject('maintenance')">building maintaince</button>
+        </div>
+        <div class="part01 c">
+            <div class="left-section01">
+                <!-- Left section with picture -->
+                <img id="projectImage" src="image/project/architecture-01.png" alt="Project Image">
+            </div>
+            <div class="right-section01">
+                <!-- Right section with heading and paragraph -->
+                <h1 id="projectTitle01">Modern Minimalist Residence</h1>
+                <p id="projectDescription01">Exemplifying simplicity and sophistication, this architectural design model
+                    emphasizes clean lines, open spaces, and minimalist aesthetics, ideal for contemporary urban living.
+                </p>
+                <button class="button01">To Know More</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showProject(projectName) {
+            // Use switch case or if-else to change content based on the clicked button
+            switch (projectName) {
+                case 'architecture':
+                    document.getElementById('projectImage').src = 'image/project/architecture-01.png';
+                    document.getElementById('projectTitle').innerText = 'Modern Minimalist Residence';
+                    document.getElementById('projectDescription').innerText = 'Exemplifying simplicity and sophistication, this architectural design model emphasizes clean lines, open spaces, and minimalist aesthetics, ideal for contemporary urban living.';
+                    break;
+                case 'interior':
+                    document.getElementById('projectImage').src = 'image/project/interior-design-01.jpg';
+                    document.getElementById('projectTitle').innerText = 'Balcony Retreat';
+                    document.getElementById('projectDescription').innerText = 'Create an outdoor sanctuary with this interior design model for balconies, featuring cozy seating, vibrant plants, and ambient lighting, perfect for relaxing and enjoying the views.';
+                    break;
+                case 'multi-sector':
+                    document.getElementById('projectImage').src = 'image/project/Multi-sector-commercial-01.jpeg';
+                    document.getElementById('projectTitle').innerText = 'Jayalakshmi Silks PVT LTD';
+                    document.getElementById('projectDescription').innerText = 'Jayalakshmi Silks in Udupi offers a diverse range of exquisite silk sarees and ethnic wear and traditional craftsmanship.';
+                    break;
+                case 'construction':
+                    document.getElementById('projectImage').src = 'image/project/construction-consulting-2.jpg';
+                    document.getElementById('projectTitle').innerText = 'Client Presentation';
+                    document.getElementById('projectDescription').innerText = 'Elevate your client presentations with seamless online meetings, fostering collaboration and clarity in project communication.';
+                    break;
+
+                case 'renovation':
+                    document.getElementById('projectImage').src = 'image/project/renovation-01.jpeg';
+                    document.getElementById('projectTitle').innerText = 'Mangalore Railway Station';
+                    document.getElementById('projectDescription').innerText = 'Transforming travel experiences through the revitalization of Mangalore Railway Station, ensuring modern amenities and enhanced passenger comfort.';
+                    break;
+
+                case 'maintenance':
+                    document.getElementById('projectImage').src = 'image/project/maintaince-02.jpg';
+                    document.getElementById('projectTitle').innerText = 'AC Service';
+                    document.getElementById('projectDescription').innerText = 'Keeping indoor environments comfortable with efficient AC maintenance.';
+                    break;
+                // Add more cases for additional projects
+                default:
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

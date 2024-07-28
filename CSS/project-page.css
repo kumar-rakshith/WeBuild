@@ -1,0 +1,449 @@
+
+/* MAIN CONTACT section */
+:root {
+    --yellow: #f5bf23;
+    --black: #111;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid rgba(0, 0, 0, .3);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+/* Header styles */
+.header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    z-index: 1000;
+    background: var(--white);
+    height: 60px;
+}
+
+.header img {
+    height: 50px;
+    width: 50px;
+}
+
+.header .logo {
+    font-size: 25px;
+    color: var(--black);
+    text-transform: capitalize;
+    background: url("Wbuild.png");
+    text-decoration: none;
+}
+
+.header .logo span {
+    color: var(--yellow);
+}
+
+.header .navbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--black);
+    text-transform: capitalize;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--yellow);
+}
+
+.header .icons div {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--light-bg);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+    margin-left: .3rem;
+}
+
+.header .icons div:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.header #menu-btn {
+    display: none;
+}
+
+/* Header Section end */
+
+
+
+/* ---project-hero-section--- */
+.project-hero {
+    width: 100%;
+    height: 77vh;
+    background-image: url('../image/aboutus-page/our-vision-bottom-row-colbaration.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    height: 50vh;
+    width: 70%;
+    border-radius: 2vh;
+}
+
+.hero-title {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 12vh;
+    font-size: 10vh;
+    border-left: 1.5vh solid var(--yellow);
+    margin-left: 10vh;
+    width: 63vh;
+    padding: 0;
+    margin-bottom: 2vh;
+}
+
+
+.hero-subtitle span {
+    color: var(--yellow);
+}
+
+
+.hero-subtitle {
+    font-family: Barlow, 'Times New Roman', Times, serif;
+    margin-top: 5vh;
+    font-size: 4.5vh;
+    /* margin-left:vh; */
+    text-transform: capitalize;
+    width: 115vh;
+    padding: 0;
+    text-overflow: unset;
+    margin-bottom: 2vh;
+}
+/* ---project-hero-section--- */
+.project-display {
+    width: 100%;
+    height: auto;
+    /* margin-top: 5vh; */
+    padding: 5vh;
+    background-color: var(--white);
+}
+
+
+.project-display-title{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10vh;
+    padding-left: 3vh;
+    margin-bottom: 8vh;
+    /* background-color: #f5bf23; */
+    border-left: 1.2vh solid var(--yellow);
+    /* margin-left: 10vh; */
+    font-size: 7vh;
+}
+
+.project-buttons-row{
+    /* margin: auto 10%; */
+    /* width: 70%; */
+    margin: 6vh 5%;
+  display: flex;
+  justify-content: center;
+  gap: 2vh;
+}
+
+
+.project-button{
+    display: inline-block;
+    margin: .2vh .5vh;
+    padding: 1.5vh 1.2vh;
+    background: var(--yellow);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.7vh;
+    border-radius: 2vh;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+}
+
+.project-button:hover{
+    /* background: var(--light-bg); */
+    color: var(--black);
+}
+
+.project-btn-active {
+    background-color: var(--light-bg);
+    color: var(--black); /* Optionally change text color for better visibility */
+}
+
+#op{
+    width: 10vh;
+}
+
+.project-box {
+    width: 70vh;
+    height: 53vh;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    background-color: var(--white);
+    /* border-radius: 2vh; */
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.project-box img {
+    width: 70vh;
+    height: 40vh;
+    margin-bottom: 0;
+    /* opacity: 0.7;
+    transition: opacity 0.3s ease; */
+}
+
+.project-details {
+    padding: 1vh;
+    height: 13vh;
+    margin-top: -0.6vh;
+    transition: background-color ease-in-out 0.5s;
+}
+
+.project-box:hover .project-details {
+   background-color: #f5bf23;
+}
+
+.project-box:hover img {
+    background-color: rgba(0, 0, 0, .5)
+ }
+
+.project-details h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.project-details p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:2vh;
+    color: var(--black);
+}
+
+
+.project-display-row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    justify-content: center;
+    gap: 5vh;
+    /* align-items: center; */
+    /* margin-top: 5vh; */
+}
+
+
+
+
+
+/* Footer Section Start */
+.footer {
+   
+    margin: 0;
+    /* margin-top: 3vh; */
+    padding: 0;
+}
+
+.footer-section {
+    height: 320px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-info {
+    height: 30%;
+    background-color: #f5bf23;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-address,
+.info-pno,
+.info-email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 8px;
+
+}
+
+.info-address img,
+.info-pno img,
+.info-email img {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.info-address p,
+.info-pno p,
+.info-email p {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.info-address h2,
+.info-pno h2,
+.info-email h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+
+.footer .credit {
+    font-size: 15px;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-top: 10px;
+    padding-top: 1rem;
+}
+
+.footer .credit span {
+    color: var(--yellow);
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom .hr {
+    background-color: #eee;
+    border: 1px solid #eee;
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+}
+
+.getin-touch img:hover {
+    transform: scale(1.1);
+    transition: .5s ease all;
+    scale: (1.1);
+    object-fit: cover;
+}
+
+.getin-touch,
+.quick-links {
+    color: var(--white);
+    font-size: 8px;
+}
+
+.quick-links a {
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    padding: 0;
+    width: 75px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.getin-touch h1,
+.quick-links h1 {
+    text-decoration: underline;
+    font-size: medium;
+}
+
+.quick-links {
+    margin-top: 10px;
+}
+
+.getin-touch img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: #eee;
+    margin: 10px;
+    margin-top: 7px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .links .btn {
+    margin: .5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    background: var(--yellow);
+    color: var(--black);
+}
+
+.btn2 {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--yellow);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.btn2:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+/* Footer Section End */
